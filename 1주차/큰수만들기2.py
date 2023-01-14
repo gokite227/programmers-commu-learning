@@ -10,6 +10,5 @@ def solution(number, k):
                 num.append(number[i])
         else :   
             num.append(number[i])
-        
-    print(num)
+
     return answer
