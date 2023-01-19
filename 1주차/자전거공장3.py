@@ -4,12 +4,12 @@ cost = [[0, 10], [50, 20], [100, 30], [200, 40]]
 answer = 0
 n = 0
 product = []
+order.sort()
 for i in order :
     i[0] -= n
     n = i[0] + n
 
 for i,j in order :
-
     while product :
         _i, _j = product[-1]
         if i / j > _i / _j :
@@ -25,7 +25,7 @@ for i, j in product :
             break
         answer += (j - i * t) * (p - p_prev)
         p_prev = p
-        
+
 print(answer)
 
 
