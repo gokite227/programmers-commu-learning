@@ -1,4 +1,5 @@
 def solution(scoville, K):
+    #answer
     answer = 0
     s_coville = scoville
     f = 0
